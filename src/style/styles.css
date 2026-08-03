@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --app-bg: #1c2127;
+    --app-surface: #18181c;
+    --app-surface-alt: #1c1c1f;
+    --app-toolbar: #222628;
+    --app-card: #282c34;
+    --app-text: #c9d1d9;
+    --app-text-heading: #dadada;
+    --app-text-soft: #b0c6cb;
+    --app-border: rgba(208, 218, 226, 0.09);
+    --app-border-strong: rgba(208, 218, 226, 0.16);
+    --app-accent: #2779ae;
+    --app-accent-soft: #6e92a8;
+    --sidebar-bg: #181c20;
+    --sidebar-header-bg: #181c20;
+    --sidebar-hover: rgba(255, 255, 255, 0.05);
+    --sidebar-active: #272b2f;
+    --sidebar-active-ring: transparent;
+    --sidebar-active-text: #ffffff;
+    --tabbar-bg: #222628;
+    --tab-bg: #222628;
+    --tab-hover: rgba(255, 255, 255, 0.05);
+    --tab-active-bg: #1c2127;
+    --tab-active-ring: transparent;
+    --tab-text: rgba(176, 198, 203, 0.72);
+    --tab-active-text: #e9eef2;
+    --tab-border: rgba(255, 255, 255, 0.08);
+    --note-bg: #1c2127;
+    --note-bg-soft: #222831;
+    --note-border: rgba(255, 255, 255, 0.1);
+    --note-text: #c9d1d9;
+    --note-heading: #dadada;
+    --callout-generic-bg: #282c34;
+    --callout-generic-border: rgba(255, 255, 255, 0.08);
+    --callout-generic-accent: #6e92a8;
+    --callout-generic-text: #d7e0ef;
+    --callout-note-bg: #282c34;
+    --callout-note-border: rgba(255, 255, 255, 0.08);
+    --callout-note-accent: #2779ae;
+    --callout-note-text: #e6edf7;
+    --callout-tip-bg: #282c34;
+    --callout-tip-border: rgba(255, 255, 255, 0.08);
+    --callout-tip-accent: #57d6c3;
+    --callout-tip-text: #def8f4;
+    --callout-danger-bg: #282c34;
+    --callout-danger-border: rgba(255, 255, 255, 0.08);
+    --callout-danger-accent: #ff7e94;
+    --callout-danger-text: #ffe4e9;
+    --code-bg: #282c34;
+    --code-panel: #2b303a;
+    --code-panel-strong: #282c34;
+    --code-border: rgba(255, 255, 255, 0.08);
+    --code-gutter-bg: #242932;
+    --code-line-number: rgba(176, 198, 203, 0.45);
+    --code-inline-bg: #282c34;
+    --code-inline-border: rgba(255, 255, 255, 0.08);
+    --code-inline-text: #b8d4f0;
+    --code-line-highlight: #303642;
+    --scrollbar-thumb: #303337;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    min-height: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Segoe UI Variable Text", "Segoe UI", "Aptos", sans-serif;
+    background: var(--app-bg);
+    color: var(--app-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  .sidebar-scrollbar-hidden {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .sidebar-scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+
+  .panel-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+
+  .panel-scrollbar:hover {
+    scrollbar-color: var(--scrollbar-thumb) transparent;
+  }
+
+  .panel-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .panel-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .panel-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: transparent;
+  }
+
+  .panel-scrollbar:hover::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+  }
+
+  .note-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.72) transparent;
+  }
+
+  .note-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .note-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .note-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.66);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+
+  .note-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.82);
+    background-clip: padding-box;
+  }
+
+  .outline-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .outline-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  ::selection {
+    background: rgba(56, 189, 248, 0.28);
+    color: #f8fafc;
+  }
+}

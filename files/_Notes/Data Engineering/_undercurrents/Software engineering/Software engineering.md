@@ -1,0 +1,3 @@
+- Diseño de pipelines como código (no scripts sueltos)
+- Manejo de configuración y secretos (nunca hardcodear credenciales)
+- Versionado de esquemas

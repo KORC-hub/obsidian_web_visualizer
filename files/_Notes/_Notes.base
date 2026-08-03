@@ -1,0 +1,16 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.ext != "png"
+        - file.ext != "pdf"
+        - file.ext != "csv"
+        - file.ext != "gif"
+        - file.ext != "svg"
+        - '!file.name.contains("untitled")'
+        - file.folder.contains("_Notes")
+    groupBy:
+      property: file.folder
+      direction: ASC
+    sort: []

@@ -1,0 +1,4 @@
+- **IAM** (roles, policies, permisos de mínimo privilegio) — es la base de todo lo demás en AWS
+- KMS (encriptación de datos en reposo)
+- Lake Formation (control de permisos a nivel de tabla/columna sobre data lakes)
+- Manejo de datos sensibles/PII

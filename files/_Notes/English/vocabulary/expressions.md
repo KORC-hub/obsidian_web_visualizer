@@ -1,0 +1,5 @@
+- So on -> etcétera
+- wrap up -> terminar
+- dive in -> sumergirse
+- so far -> hasta ahora
+- stand out -> destacar

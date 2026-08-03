@@ -1,0 +1,1 @@
+# Conexión mediante SSH (Secure SHell)
